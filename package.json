@@ -5,11 +5,27 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
+    "firebase": "^8.6.3",
+    "nodemailer": "^6.6.1",
+    "particles.js": "^2.0.0",
+    "querystring": "^0.2.1",
+    "v-reset-input": "^1.1.2",
+    "vue": "^2.6.11",
+    "vue-animate-scroll": "^0.1.5",
+    "vue-axios": "^3.2.4",
+    "vue-rellax": "^0.2.0",
+    "vue-resource": "^1.5.2",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
@@ -18,6 +34,15 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^5.0.0",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -32,7 +57,10 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off",
+      "no-console": "off"
+    }
   },
   "browserslist": [
     "> 1%",
