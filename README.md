@@ -1,4 +1,4 @@
-# portfolio-ui
+# portfolio
 
 ## Project setup
 ```
